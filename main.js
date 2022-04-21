@@ -27,7 +27,7 @@ class Typer {
 }
 
 window.onload = () => {
-    const x = new Typer(document.getElementById('terminal'));
+    const x = new Typer(document.getElementById('text'));
     x.type(20, showUpdates);
 
     document.getElementById('skip').onclick = function(){
@@ -38,6 +38,6 @@ window.onload = () => {
 
 function showUpdates(){
     document.getElementById('updates').style.display = 'block';
-    const y = new Typer(document.getElementById('updates'));
+    const y = new Typer(document.getElementById('parttwo'));
     y.type(20);
 }
